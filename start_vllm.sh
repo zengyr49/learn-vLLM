@@ -15,5 +15,8 @@ python -m vllm.entrypoints.openai.api_server \
   --served-model-name qwen2.5-1.5b \
   --host 0.0.0.0 \
   --port 8000 \
+  --dtype float32 \
   --trust-remote-code \
-  --max-num-batched-tokens 32768
+  --max-num-batched-tokens 32768 \
+  --enable-auto-tool-choice \
+  --tool-call-parser qwen3_xml   # Qwen 风格工具调用更匹配 XML parser

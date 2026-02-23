@@ -21,3 +21,7 @@ print("请求完成")
 print("响应内容:")
 print(response.choices[0].message.content)
 print("请求完成")
+
+
+
+
