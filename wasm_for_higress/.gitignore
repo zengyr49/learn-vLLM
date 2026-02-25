@@ -1,0 +1,9 @@
+# WASM 构建产物
+main.wasm
+main.h
+
+# Go
+*.exe
+*.test
+*.out
+/vendor/
